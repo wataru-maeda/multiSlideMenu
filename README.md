@@ -19,14 +19,14 @@
 
 ## Installation
 
-multiSlideMenu is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+~~multiSlideMenu is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:~~
 
 ```ruby
 pod 'multiSlideMenu’, ‘~> 0.1.0’
 ```
 
-Or add the [MultiSlideMenuViewController](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) file to your project manually.
+*Add the [MultiSlideMenuViewController](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) file to your project manually.
 
 ## Usage
 
