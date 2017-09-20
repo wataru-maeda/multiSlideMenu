@@ -26,9 +26,69 @@ it, simply add the following line to your Podfile:
 pod 'multiSlideMenu'
 ```
 
-Or add the [MultiSlideMenuViewController.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) file to your project manually.
+Or add the [MultiSlideMenuViewController](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) file to your project manually.
 
+## Usage
 
+### 1. Setup
+
+ 1-1. Inherit `MultiSlideMenuViewController` in your `UIViewController` class
+ 
+```Swift
+import UIKit
+
+class ViewController: MultiSlideMenuViewController {
+```
+
+ 1-2. Initialize `SlideMenuView` with position and bounds, That's all!
+ 
+```Swift
+// Sets up left slide menu
+let sideMenu = SlideMenuView(position: .Left, bounds: view.frame)
+sideMenu.backgroundColor = .yellow
+super.setupSlideMenus(views: [sideMenu])
+```
+
+<img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/sample.gif" width="100">
+ 
+### 2. Customize
+
+2-1. Create subview of `SlideMenuView` class
+
+```Swift
+import UIKit
+
+class CustomSlideMenu: SlideMenuView {
+```
+
+2-2. You can add code for your custom UI
+
+```Swift
+import UIKit
+
+class CustomSlideMenu: SlideMenuView {
+  
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        // your code here
+    }
+}
+```
+See the [sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift)
+
+### 3. Get current position from `CustomSlideMenu`
+
+3.1 Your can override functions that keeps track of x, y position while dragging
+
+See the [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift#L76#L119)
+
+### 4. Get current position from `ViewController`
+
+3.1 Your can override the functions `func getPresentingSlideWithPoint(slideMenu: point: )`
+ 
+ See the [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65)
+ 
 ## Requirements
 
 iOS 8+  
