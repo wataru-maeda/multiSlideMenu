@@ -30,13 +30,13 @@ pod 'multiSlideMenu’, ‘~> 0.1.0’
 
 ## Usage
 
- 1. Inherit `MultiSlideMenuViewController` in your `UIViewController` class
+ 1. Inherit `MultiSlideMenuViewController` in your UIViewController class
  
 ```Swift
 class ViewController: MultiSlideMenuViewController {
 ```
 
- 2. Initialize `SlideMenuView` with position and bounds, That's all!
+ 2. Initialize SlideMenuView with position and bounds, That's all!
  
 ```Swift
 // Sets up left slide menu
@@ -46,6 +46,7 @@ super.setupSlideMenus(views: [sideMenu])
 ```
 
 It's specifing the slide menu is `Left` position, the view size is `view.frame` and background color is `yellow`.
+  
 <img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/sample.gif" width="100">
  
 ## Customize View
@@ -67,14 +68,14 @@ class CustomSlideMenu: SlideMenuView {
 ```
 See the [code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift#L36L66) or [sample gif](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example1.gif) for more info.
 
-## Toggle the slide view
+## Toggle by button action
 
 You can call `show()` or `hide()` for toggle the views.  
 For the `hide()` function, please check [here](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo2/demo2/CustomSlideMenu.swift#L71)
 or the `show()`, you can check from [here](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo2/demo2/ViewController.swift#L82) 
 You can see the [sample gif](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif).
 
-## Get position in `CustomSlideMenu`
+## Tacking position in SlideMenu
 
 Tracking the current position is also important if you like to implement specific action in the specific timing.
 There are some override functions to recognize the events.
@@ -89,7 +90,7 @@ There are some override functions to recognize the events.
 Your can override there functions that keeps track of x, y position while dragging  
 See the [code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo2/demo2/CustomSlideMenu.swift#L76#L119) or [sample gif](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif) for more info.
 
-## Get position in `ViewController`
+## Tacking position in ViewController
 
 Your can override the functions `func getPresentingSlideWithPoint(slideMenu: point: )`  
 See the [code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65) or [sample gif](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example3.gif) for more info.
