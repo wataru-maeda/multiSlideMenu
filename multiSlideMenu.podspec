@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'multiSlideMenu'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of multiSlideMenu.'
+  s.summary          = 'Slide menus toggled by pan gesture appearing from 4 directions, Top, Left. Bottom and Right.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The open source library was for the developers who mind creating the apps with side menus which are toggled by a gesture. You can customize each side menu by specifying position and size depends on the design. Each side menus are traceable in position. When the gesture state is changed, each of override functions is called so that you can detect which side menu was dragging and where it is.
                        DESC
 
   s.homepage         = 'https://github.com/WataruMaeda/multiSlideMenu'
