@@ -53,12 +53,6 @@ super.setupSlideMenus(views: [sideMenu])
 
 1. Create subview of `SlideMenuView` class
 
-```Swift
-import UIKit
-
-class CustomSlideMenu: SlideMenuView {
-```
-
 2. You can add code for your custom UI
 
 ```Swift
@@ -73,19 +67,25 @@ class CustomSlideMenu: SlideMenuView {
     }
 }
 ```
-See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example1.gif)
+See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift#L36L66) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example1.gif) for more info.
+
+## Toggle the slide view
+
+You can call `slideMenuView.show()` or `slideMenuView.hide()` for toggle views
+
+See the Code to [hide](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo2/demo2/CustomSlideMenu.swift#L71), code to [show](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo2/demo2/ViewController.swift#L82) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif) for more info.
 
 ## Get position in `CustomSlideMenu`
 
 Your can override functions that keeps track of x, y position while dragging
 
-See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo2/CustomSlideMenu.swift#L76#L119) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif)
+See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo2/CustomSlideMenu.swift#L76#L119) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif) for more info.
 
 ## Get position in `ViewController`
 
 Your can override the functions `func getPresentingSlideWithPoint(slideMenu: point: )`
  
- See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example3.gif)
+ See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example3.gif) for more info.
  
 ## Requirements
 
