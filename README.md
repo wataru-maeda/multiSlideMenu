@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/multiSlideMenu.svg?style=flat)](http://cocoapods.org/pods/multiSlideMenu)
 [![Platform](https://img.shields.io/cocoapods/p/multiSlideMenu.svg?style=flat)](http://cocoapods.org/pods/multiSlideMenu)
 
-## Example
+## Features
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+- [x] Top, Left, Bottom and Right side positioning
+- [x] Easy to use, fully customisable, added slide menus without needing to write tons of code
+- [x] Enable to toggle slide menu with a button action.
+- [x] Keeps track of x, y point while dragging slide menu.
+- [x] Supports continuous swiping between side menus on 4 sides in a single gesture.
 
-## Requirements
+## Demos
+
+<img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example1.gif" width="280">  <img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif" width="280">  <img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example3.gif" width="280">
 
 ## Installation
 
@@ -20,10 +26,15 @@ it, simply add the following line to your Podfile:
 pod 'multiSlideMenu'
 ```
 
-## Author
+Or add the [MultiSlideMenuViewController.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) file to your project manually.
 
-WataruMaeda, wm19850716@gmail.com
+
+## Requirements
+
+iOS 8+  
+Swift 3.0+  
+Xcode 8.0+
 
 ## License
 
-multiSlideMenu is available under the MIT license. See the LICENSE file for more info.
+This project is available under the MIT license. See the [LICENSE](https://github.com/WataruMaeda/multiSlideMenu/blob/master/LICENSE) file for more info.
