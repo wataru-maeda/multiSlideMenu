@@ -1,4 +1,4 @@
-# multiSlideMenu
+# Multi Slide Menu
 
 [![CI Status](http://img.shields.io/travis/WataruMaeda/multiSlideMenu.svg?style=flat)](https://travis-ci.org/WataruMaeda/multiSlideMenu)
 [![Version](https://img.shields.io/cocoapods/v/multiSlideMenu.svg?style=flat)](http://cocoapods.org/pods/multiSlideMenu)
@@ -30,9 +30,9 @@ Or add the [MultiSlideMenuViewController](https://github.com/WataruMaeda/multiSl
 
 ## Usage
 
-### 1. Setup
+#### Setup
 
- 1-1. Inherit `MultiSlideMenuViewController` in your `UIViewController` class
+ 1. Inherit `MultiSlideMenuViewController` in your `UIViewController` class
  
 ```Swift
 import UIKit
@@ -40,7 +40,7 @@ import UIKit
 class ViewController: MultiSlideMenuViewController {
 ```
 
- 1-2. Initialize `SlideMenuView` with position and bounds, That's all!
+ 2. Initialize `SlideMenuView` with position and bounds, That's all!
  
 ```Swift
 // Sets up left slide menu
@@ -51,9 +51,9 @@ super.setupSlideMenus(views: [sideMenu])
 
 <img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/sample.gif" width="100">
  
-### 2. Customize
+#### Customize
 
-2-1. Create subview of `SlideMenuView` class
+1. Create subview of `SlideMenuView` class
 
 ```Swift
 import UIKit
@@ -61,7 +61,7 @@ import UIKit
 class CustomSlideMenu: SlideMenuView {
 ```
 
-2-2. You can add code for your custom UI
+2. You can add code for your custom UI
 
 ```Swift
 import UIKit
@@ -77,15 +77,15 @@ class CustomSlideMenu: SlideMenuView {
 ```
 See the [sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift)
 
-### 3. Get current position from `CustomSlideMenu`
+#### Get position in `CustomSlideMenu`
 
-3.1 Your can override functions that keeps track of x, y position while dragging
+Your can override functions that keeps track of x, y position while dragging
 
 See the [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift#L76#L119)
 
-### 4. Get current position from `ViewController`
+#### Get position in `ViewController`
 
-3.1 Your can override the functions `func getPresentingSlideWithPoint(slideMenu: point: )`
+Your can override the functions `func getPresentingSlideWithPoint(slideMenu: point: )`
  
  See the [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65)
  
