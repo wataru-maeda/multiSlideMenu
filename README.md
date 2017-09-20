@@ -30,8 +30,6 @@ pod 'multiSlideMenu’, ‘~> 0.1.0’
 
 ## Usage
 
-#### Setup
-
  1. Inherit `MultiSlideMenuViewController` in your `UIViewController` class
  
 ```Swift
@@ -51,7 +49,7 @@ super.setupSlideMenus(views: [sideMenu])
 
 <img src="https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/sample.gif" width="100">
  
-#### Customize
+## Customize View
 
 1. Create subview of `SlideMenuView` class
 
@@ -75,19 +73,19 @@ class CustomSlideMenu: SlideMenuView {
     }
 }
 ```
-See the [sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift)
+See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example1.gif)
 
-#### Get position in `CustomSlideMenu`
+## Get position in `CustomSlideMenu`
 
 Your can override functions that keeps track of x, y position while dragging
 
-See the [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo1/CustomSlideMenu.swift#L76#L119)
+See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/demo1/demo2/CustomSlideMenu.swift#L76#L119) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example2.gif)
 
-#### Get position in `ViewController`
+## Get position in `ViewController`
 
 Your can override the functions `func getPresentingSlideWithPoint(slideMenu: point: )`
  
- See the [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65)
+ See the [Code](https://github.com/WataruMaeda/multiSlideMenu/blob/master/demos/Demo3/Demo3/ViewController.swift#L65) or [Sample](https://github.com/WataruMaeda/multiSlideMenu/blob/master/gifs/example3.gif)
  
 ## Requirements
 
