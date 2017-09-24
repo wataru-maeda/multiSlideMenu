@@ -1,10 +1,5 @@
 # Multi Slide Menu
 
-[![CI Status](http://img.shields.io/travis/WataruMaeda/multiSlideMenu.svg?style=flat)](https://travis-ci.org/WataruMaeda/multiSlideMenu)
-[![Version](https://img.shields.io/cocoapods/v/multiSlideMenu.svg?style=flat)](http://cocoapods.org/pods/multiSlideMenu)
-[![License](https://img.shields.io/cocoapods/l/multiSlideMenu.svg?style=flat)](http://cocoapods.org/pods/multiSlideMenu)
-[![Platform](https://img.shields.io/cocoapods/p/multiSlideMenu.svg?style=flat)](http://cocoapods.org/pods/multiSlideMenu)
-
 ## Features
 
 - [x] Top, Left, Bottom and Right side positioning
@@ -19,24 +14,17 @@
 
 ## Installation
 
-~~multiSlideMenu is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:~~
-
-```ruby
-pod 'multiSlideMenu’, ‘~> 0.1.0’
-```
-
-*Add the [MultiSlideMenuViewController.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) class to your project manually(drag & drap the class into your project).
+Add the [MultiSlideMenuViewController.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) to your project manually (drag & drap the file into your project).
 
 ## Usage
 
- 1. Inherit `MultiSlideMenuViewController` in your UIViewController class
+ 1. Please add a file subclassed of `MultiSlideMenuViewController`
  
 ```Swift
 class ViewController: MultiSlideMenuViewController {
 ```
 
- 2. Initialize SlideMenuView with position and bounds, That's all!
+ 2. Initialize `SlideMenuView` with position and bounds, then pass the views to the `super.setupSlideMenus(views: )`. That's all!
  
 ```Swift
 // Sets up left slide menu
