@@ -14,7 +14,7 @@
 
 ## Installation
 
-Add the [MultiSlideMenuViewController.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/Classes/MultiSlideMenuViewController.swift) to your project manually (drag & drap the file into your project).
+Add the [MultiSlideMenuViewController.swift](https://github.com/WataruMaeda/multiSlideMenu/blob/master/multiSlideMenu/MultiSlideMenuViewController.swift) to your project manually (drag & drap the file into your project).
 
 ## Usage
 
